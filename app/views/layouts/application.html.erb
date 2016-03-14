@@ -12,20 +12,22 @@
 </head>
 <body>
   <header class="navbar">
-    <div class="container">
+    <div class="container wraphead">
       <%= link_to image_tag("https://s3-ap-southeast-1.amazonaws.com/awakening-static/logo-REV.png"), root_path, id: "logo" %>
       <div class="header-image">
         <img src="https://s3-ap-southeast-1.amazonaws.com/awakening-static/E_02a.jpg">
       </div>
 
         <ul class="nav nav-pills">
-          <li><%= link_to "Tentang Kami", "#" %></li>
-          <li><%= link_to "Produk", "#" %></li>
-          <li><%= link_to "Tips Kesehatan", "#" %></li>
-          <li><%= link_to "Kontak", "#" %></li>
-          <li><%= link_to "Pertanyaan", "#" %></li>
+          <li class="site-nav"><%= link_to "Tentang Kami", root_path %></li>
+          <li class="site-nav"><%= link_to "Produk", produk_path %></li>
+          <!--
+          <li class="site-nav"><%= link_to "Tips Kesehatan", "#" %></li>
+          -->
+          <li class="site-nav"><%= link_to "Kontak", kontak_path %></li>
+          <li class="site-nav"><%= link_to "Pertanyaan", pertanyaan_path %></li>
         </ul>
-      
+
     </div>
   </header>
   <div class="container">

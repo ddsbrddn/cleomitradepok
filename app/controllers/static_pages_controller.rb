@@ -4,4 +4,10 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def produk
+  end
+
+  def pertanyaan
+  end
 end

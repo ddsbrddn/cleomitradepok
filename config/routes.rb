@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   resources :articles
   root 'static_pages#index'
 
-  get 'static_pages/contact'
+  get 'kontak' => 'static_pages#contact'
+  get 'produk' => 'static_pages#produk'
+  get 'pertanyaan' => 'static_pages#pertanyaan'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

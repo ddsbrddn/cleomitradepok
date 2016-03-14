@@ -4,6 +4,7 @@
 body {
   background: #fff url(https://s3-ap-southeast-1.amazonaws.com/awakening-static/bg_sml.jpg) top center no-repeat;
   background-repeat: repeat-x;
+  padding-bottom: 60px;
 }
 
 #logo {
@@ -20,15 +21,101 @@ body {
   width: 100%;
 }
 
-.nav {
+.wraphead {
+  padding: 9px 0 0 0;
+}
+
+.navbar .nav {
   background: url("//cdn.shopify.com/s/files/1/1189/7322/files/navbg.gif?15937211079269203670") top left repeat-x;
   border-radius: 0.4em;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em;
   li a {
     padding: 5px 45px;
+    color: #333;
+    &:hover {
+      text-decoration: none;
+      background-color: transparent;
+    }
   }
 }
 .container {
   width: 870px;
+}
+
+.text-link {
+    color: #f45b4f;
+    text-decoration: none;
+    background: transparent;
+}
+
+.sidebar li {
+    margin-bottom: 0.25em;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #C0CFD4;
+    text-decoration: none;
+    width: 100%;
+    a {
+        color: #f45b4f;
+        text-decoration: none;
+        background: transparent;
+    }
+}
+
+.site-nav {
+    font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: default;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-tabs {
+  border-bottom: none;
+  li a {
+    border: none;
+  }
+}
+
+.nav-tabs li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus {
+  border: none;
+}
+
+.carousel {
+    margin-top: 25px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* Helper Class*/
+.mt30 {
+  margin-top: 30px;
 }
