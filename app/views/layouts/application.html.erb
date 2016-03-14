@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= yield(:title) %> | Cleo Mitra Depok</title>
+  <title><%= yield(:title) %> </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
 </head>
 <body>
+  <header class="navbar">
+    <div class="container">
+      <%= link_to image_tag("https://s3-ap-southeast-1.amazonaws.com/awakening-static/logo-REV.png"), root_path, id: "logo" %>
+      <div class="header-image">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/awakening-static/E_02a.jpg">
+      </div>
 
-<%= yield %>
-
+        <ul class="nav nav-pills">
+          <li><%= link_to "Tentang Kami", "#" %></li>
+          <li><%= link_to "Produk", "#" %></li>
+          <li><%= link_to "Tips Kesehatan", "#" %></li>
+          <li><%= link_to "Kontak", "#" %></li>
+          <li><%= link_to "Pertanyaan", "#" %></li>
+        </ul>
+      
+    </div>
+  </header>
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>
