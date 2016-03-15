@@ -15,7 +15,15 @@
     <div class="container wraphead">
       <%= link_to image_tag("https://s3-ap-southeast-1.amazonaws.com/awakening-static/logo-REV.png"), root_path, id: "logo" %>
       <div class="header-image">
-        <img src="https://s3-ap-southeast-1.amazonaws.com/awakening-static/E_02a.jpg">
+        <% if current_page?(root_path) %>
+          <img src="https://s3-ap-southeast-1.amazonaws.com/awakening-static/E_02a.jpg">
+        <% elsif current_page?(produk_path) %>
+          <img src="https://s3-ap-southeast-1.amazonaws.com/awakening-static/E_04a.jpg">
+        <% elsif current_page?(kontak_path) %>
+          <img src="https://s3-ap-southeast-1.amazonaws.com/awakening-static/E_05a.jpg">
+        <% else %>
+          <img src="https://s3-ap-southeast-1.amazonaws.com/awakening-static/E_06a.jpg">
+        <% end %>
       </div>
 
         <ul class="nav nav-pills">
