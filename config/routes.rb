@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :articles
+  #resources :articles
   root 'static_pages#index'
 
   get 'kontak' => 'static_pages#contact'
