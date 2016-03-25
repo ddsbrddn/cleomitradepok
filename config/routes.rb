@@ -1,11 +1,19 @@
 Rails.application.routes.draw do
 
+  get 'errors/not_found'
+
+  get 'errors/internal_server_error'
+
   #resources :articles
   root 'static_pages#index'
 
   get 'kontak' => 'static_pages#contact'
   get 'produk' => 'static_pages#produk'
   get 'pertanyaan' => 'static_pages#pertanyaan'
+
+  #connects requests to the appropriate actions of the errors controller
+  match "/404", :to => "errors#not_found", :via => :all
+  match "/500", :to => "errors#internal_server_error", :via => :all
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
