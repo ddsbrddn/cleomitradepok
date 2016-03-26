@@ -13,7 +13,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   gem 'byebug'
 end
-
+gem "bigdecimal"
+gem "mysql2"
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'sqlite3'
@@ -21,7 +22,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg',             '0.17.1'
-  gem 'rails_12factor', '0.0.2'
-  gem 'puma',           '3.1.0'
+#  gem 'pg',             '0.17.1'
+#  gem 'rails_12factor', '0.0.2'
+ # gem 'puma',           '3.1.0'
 end
