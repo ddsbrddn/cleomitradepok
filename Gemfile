@@ -22,15 +22,11 @@ group :development do
 end
 
 group :production do
-<<<<<<< HEAD
-#  gem 'pg',             '0.17.1'
-#  gem 'rails_12factor', '0.0.2'
- # gem 'puma',           '3.1.0'
-=======
+
   # use mysql gem for hosting compatibility
   gem 'mysql', '~> 2.9', '>= 2.9.1'
   #gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
   gem 'puma',           '3.1.0'
->>>>>>> 54c5c21d237272a43d6c5169bb46136fda9d49ce
+
 end
