@@ -77,7 +77,6 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multi_json (1.11.2)
-    mysql (2.9.1)
     mysql2 (0.4.3)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
@@ -162,7 +161,6 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
-  mysql (~> 2.9, >= 2.9.1)
   mysql2
   puma (= 3.1.0)
   rails (= 4.2.5.1)
