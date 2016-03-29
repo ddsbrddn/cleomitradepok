@@ -30,3 +30,7 @@ group :production do
   gem 'puma',           '3.1.0'
 
 end
+
+gem 'devise', '~> 3.5.2'
+gem "wysiwyg-rails"
+gem 'font-awesome-rails'
