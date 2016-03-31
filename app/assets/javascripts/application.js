@@ -15,3 +15,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require froala_editor.min.js
+//= require plugins/code_view.min.js
+//= require plugins/video.min.js

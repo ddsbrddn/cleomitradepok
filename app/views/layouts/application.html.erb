@@ -4,6 +4,7 @@
   <title><%= yield(:title) %> </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
   <%= csrf_meta_tags %>
   <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -32,6 +33,7 @@
           <!--
           <li class="site-nav"><%= link_to "Tips Kesehatan", "#" %></li>
           -->
+          <li class="site-nav"><%= link_to "Blog", posts_path %></li>
           <li class="site-nav"><%= link_to "Kontak", kontak_path %></li>
           <li class="site-nav"><%= link_to "Pertanyaan", pertanyaan_path %></li>
         </ul>
@@ -39,6 +41,10 @@
     </div>
   </header>
   <div class="container">
+    <% flash.each do |name, msg| %>
+      <%= content_tag(:div, msg, class: "alert") %>
+    <% end %>
+
     <%= yield %>
   </div>
 </body>
