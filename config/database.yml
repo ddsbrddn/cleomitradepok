@@ -13,8 +13,8 @@ default: &default
 development:
   <<: *default
   database: db/development.sqlite3
-  username: root
-  password: satrianijoe
+  username: plncikan_test
+  password: q1w2e3r4
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
