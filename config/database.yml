@@ -12,7 +12,7 @@ default: &default
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: plncikan_test
   username: plncikan_test
   password: q1w2e3r4
   host: localhost
